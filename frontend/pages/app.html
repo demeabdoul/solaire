@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolarDim Pro</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAIJ0lEQVR4nO2aa1CU1xnHf+d9dxfCVUQsd7GilsYaMzpjQECaKKPBdNJMaZrGpGm1k5nGZmpqHKlJu2mq1k6aXmbqJDNpNRPTipo02gpobYML8QLixBsxRbwsFxUBZQGFvZ1+gFAW9sa+O93MdP+f9j3Pea57Ls85z4EwwggjjDDCCCMU6KlSS3qqdMtCaYMulMqFVN4e/jklVDaENACfA/0ooTYg1AgHINQGhBqhnYNS1CBC+yeIQBl7qwz3SskzNml9NfFhLBPRmbIxL1N1qlkgooeaZL/TKS+3b61tAaS/groqiNMLw8tCsCN2mfX8hBwYRsAjQMJTINfphX5RV4VtmbcgpBtzJztt6rcEogRJAZJYKYalDEOogrSfFPQCJiQHRIS9vNV4rNuTzCHn9VUgcyXCAWwIxI+AR8D1g0RHSX0FkkIBDQ6HbemkFdwa3SdlY940RSplIJ4BIiaoYhD4kxRiS/smU8towrDzB4EHgGM26f0P8IaAAzDKkCogF6iOW277KgClpWp69o0XpZAvA1FadAD9UvLz9oia1zDiBLBU6quBxWh0HjQGAIaDoOj/hkSJW24rSC4rSFJhN4IirbJdIPmXjFAfbzdWd1oq9SYE0ua0PaLFeQhCAEbsk4i0DfkZQhWHgNm++s+amkXeF+8nOymL6YnpZCQkE2WI5B59JDER0Zw0n+MH5UZuWDpHa7kghVLc9gtTqxD+L5beELQApBqLpgirvQbElzz1SYqdzPfzvsnX5j5I+qRknzJ31u1nw77XxjZftBsci24Yj3ZoNBkIVh5gRBFWxy5PzusUlXVLVrE6r5RIvf9rYZQh0l1ztm5QLae0dAl79jgCtHgEQUlC0gcL1wMPuaNNiU6gfNXvWLN45YScv9nbzTbTn90TBUWpM6+/EIit40VpxNBWpzbiZrXXKSrlq37Lwqz73PI2d5o5cfk0lzpbuNzVimWgn37rHfoH72K+dQ2bw+ZNdb8UImfsFjlRaJ4CQ/u8+63u+aKnxzl/1zbAzrr9bD/+Pubudi2qo4VkA/CcFiGaRkBa2UOJCGsbbpIcg05P/fr3SIyeNNJ2qbOF775TRnOnWYva0RhQnTLV/MvaW767uoemNUAqg4/jIcN7cFaui/M2hy3YzgNEOlVKtQjQFAAhlRWeaDOSMly+jzTVB9t5AKQUJVr4tQRACOQiT8QvxCa6fJtvaZrv3lCIhqkccABSNuZlSojzRL99p9flO82PxCdATEpbX5QWKHPgI8Cpz/RG/rTjssv3ktl5FOd4HDCaIPX2rEB5vW6DPVVqiZDKDkAdo7I2p8b5pjfewxeOcuuOhYSooUGiKgpvPbmJD04fZvvx9/m49ROkDEo6j+JU4iyVhgMgc8eQ7FI6vxP/sKPSE6/3PMCJE7eHDsXnyBm0W9ly6E1+9eiL/+USCo/NK+axecV03+mh/upZ6q+coaHlPGfaPmXQbvUl1puxdrdLgeJ9lAe8eKSULS5QhNPkq98rJc+zKu8bPuXZHDbOtv+bqsZadjdU0Nnv/9YuhSxo31Rb6zfDKKi+u7hH3KIMhCLW+upX3XSC9p4OFkz7Cvfo3R5uhgxRVFLip1KQvYCnFj7KgG2QUy2NftmiCMdPLTWtvb57utEbCBNA70dmS3zBtLX4cdV17loTO+v3093fQ1LMZJJiJ3vtb1D1FM1aSKTeQE1zgy/xt9s2f/SS/5a7IuAAAMQWTisAZvrT12q30dBynnfq9vH2ib/SYD7Hjd4uhIApMQmoynhT5mfOobqpjuuWmx7lCjhoqTHvCtQHTQGIy58Wj2BcJjY3bTZPL/w6Bp2eK11t4/ju2ga4eNPMkaY6/nLyAG/U7OJIUx1Wh417k7NRhtdYIQRSOjl84ahHG4TkdUut+VSgPmg6DYoIe7m06l4HRiZ3TvIM9j27Db2qB2Dte5vZc6rKq5xBu5W6q2eou3qG5ptmjCU/HKHlJM/wxjqgSLlXiw+azgLD9/Y7Rrflz5g/4jzAqyt+xLz0HL9l9gy4rmWq8DxIheQtLSdBCMKNkBRiM9D/2Xf91bM4pXOEHhMRxd7Vv+e5xU8SGxHtVVZh9gLKip91afNygOqTDnVroHZ/hqBciqaWFawXghFjPO39d20DHL/8MY3Xmuno62LQbmVy1CQyElJ4YPp9TE9MH8fz7e0vYLp40p3p69o2m36t1fbg3AobUdKs+VUglsLQVdgbT7zCsi8XahJb1Whi9bvudjj5YVtTytJgXIpq2gVGUI2My59ZgXA8AiQ5peTA+WpURWF+5hwUMfGZVtVYw5rdr2J3uvoooFEYHMst2w7eCYbpwS2MvFSYLqTz0Ojr8VlTs1izeCUlc4qI0Bl8yvnkejN/ML3LB6cPuyVjV4tbt1a3fW4KI6NKYyJuua1wqEDi2MWYa/KYiChyp9/P3LTZZCWmER8Zi16nw3K3j46+bpo6rnD00iku3vS06Ml/ICOeaNvyzy5Lpb4GgTPkpbExxdEjccttRQAYUVKtBT8W8DPA+9LvG30gjG0G029GFUc/BIoIZXHUnxJ16sbCjKGra/k9RiVLfmJAIP+IcGxp3XTMJZ30pzTvLwIOgKXCsBUh1+PHv5C5IT/BqVIqpbICZCEQ76HrbcAkJH9XpNzrLclxGX1CbI1bZv3fPpDQ8ESG1I2FGdIpslRhjwFwSF2fUOSViVZ5gvFEJqSwVBoOWCp1+0NpQ4hfaspFQdyJA8L//TvBcABCbUCoEerX2vYQ6w9tAKSQK0EG50AWRhhhhBFGGGFMFP8BwVcNh05EigQAAAAASUVORK5CYII=">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#F59E0B">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/rapport.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+</head>
+<body>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('../service-worker.js').catch(() => {});
+    });
+  }
+</script>
+
+<header>
+  <div class="logo" style="display:flex;align-items:center;gap:8px">
+    <svg width="32" height="32" viewBox="0 0 340 340" style="flex-shrink:0">
+      <defs><clipPath id="hdrClip"><circle cx="170" cy="170" r="92"/></clipPath></defs>
+      <g transform="translate(170,170)">
+        <g fill="#F2B705">
+          <rect x="-5" y="-130" width="10" height="34" rx="4"/>
+          <rect x="-5" y="96" width="10" height="34" rx="4"/>
+          <rect x="-130" y="-5" width="34" height="10" rx="4"/>
+          <rect x="96" y="-5" width="34" height="10" rx="4"/>
+          <g transform="rotate(45)">
+            <rect x="-5" y="-130" width="10" height="30" rx="4"/>
+            <rect x="-5" y="100" width="10" height="30" rx="4"/>
+            <rect x="-130" y="-5" width="30" height="10" rx="4"/>
+            <rect x="100" y="-5" width="30" height="10" rx="4"/>
+          </g>
+        </g>
+      </g>
+      <circle cx="170" cy="170" r="92" fill="#1B7A3D"/>
+      <g clip-path="url(#hdrClip)">
+        <path d="M 200 112 C 152 112, 130 128, 130 152 C 130 172, 148 180, 172 184 C 196 188, 206 194, 206 208 C 206 224, 188 232, 166 232 C 144 232, 128 224, 120 210"
+              fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/>
+      </g>
+    </svg>
+    SolarDim <span>Pro</span>
+  </div>
+  <div style="font-size:12px;color:#64748b">Dimensionnement solaire hybride</div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sb-top"><div class="sb-name">SolarDim Pro</div><div class="sb-sub">Outil de dimensionnement</div></div>
+    <div class="sb-section">Navigation</div>
+    <div class="nav active" id="nav-dashboard" onclick="showVue('dashboard')">
+      <svg viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" fill="currentColor"/><rect x="9" y="1" width="6" height="6" rx="1" fill="currentColor" opacity=".4"/><rect x="1" y="9" width="6" height="6" rx="1" fill="currentColor" opacity=".4"/><rect x="9" y="9" width="6" height="6" rx="1" fill="currentColor"/></svg>
+      Accueil
+    </div>
+    <div class="nav" id="nav-nouveau" onclick="showVue('nouveau')">
+      <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v6M5 8h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      Nouveau projet
+    </div>
+    <div class="nav" id="nav-projets" onclick="showVue('projets')">
+      <svg viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="11" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M5 3V2a1 1 0 011-1h4a1 1 0 011 1v1" stroke="currentColor" stroke-width="1.5"/></svg>
+      Mes projets <span class="nb" id="nb-projets">0</span>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <!-- ACCUEIL -->
+    <div class="vue active" id="vue-dashboard">
+      <div class="ph">
+        <div><div class="ph-title">Bienvenue sur SolarDim Pro</div><div class="ph-sub">Dimensionnement automatique de systèmes photovoltaïques hybrides</div></div>
+        <button class="btn btn-primary" onclick="showVue('nouveau')">+ Nouveau projet</button>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-ico">&#128196;</div><div class="stat-val" id="st-total">0</div><div class="stat-lbl">Projets sauvegardés</div></div>
+        <div class="stat-card"><div class="stat-ico">&#9989;</div><div class="stat-val" id="st-calc">0</div><div class="stat-lbl">Projets calculés</div></div>
+        <div class="stat-card"><div class="stat-ico">&#9728;</div><div class="stat-val c-sun" id="st-kwc">0</div><div class="stat-lbl">kWc dimensionnés</div></div>
+        <div class="stat-card"><div class="stat-ico">&#128267;</div><div class="stat-val c-bat" id="st-kwh">0</div><div class="stat-lbl">kWh stockage</div></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Projets récents</div>
+        <div id="recent-list"><div class="empty-msg">Aucun projet. Cliquez sur "+ Nouveau projet".</div></div>
+      </div>
+    </div>
+
+    <!-- PROJETS -->
+    <div class="vue" id="vue-projets">
+      <div class="ph">
+        <div><div class="ph-title">Mes projets</div><div class="ph-sub" id="projets-count">0 projet(s)</div></div>
+        <button class="btn btn-primary" onclick="showVue('nouveau')">+ Nouveau projet</button>
+      </div>
+      <div class="pgrid" id="projets-grid"></div>
+    </div>
+
+    <!-- WIZARD -->
+    <div class="vue" id="vue-nouveau">
+      <div class="ph">
+        <div><div class="ph-title">Nouveau projet</div><div class="ph-sub">Dimensionnement guidé étape par étape</div></div>
+      </div>
+
+      <div class="wbar">
+        <div class="ws active" id="ws0"><span class="wn">1</span>Identification</div>
+        <div class="ws" id="ws1"><span class="wn">2</span>Site & Météo</div>
+        <div class="ws" id="ws2"><span class="wn">3</span>Charges</div>
+        <div class="ws" id="ws3"><span class="wn">4</span>Équipements</div>
+        <div class="ws" id="ws4"><span class="wn">5</span>Dimensionnement</div>
+        <div class="ws" id="ws5"><span class="wn">6</span>Prix</div>
+        <div class="ws" id="ws6"><span class="wn">7</span>Scénarios</div>
+        <div class="ws" id="ws7"><span class="wn">8</span>Rapport</div>
+      </div>
+
+      <!-- ÉTAPE 0 : IDENTIFICATION -->
+      <div class="wp active" id="wp0">
+        <div class="card">
+          <div class="card-title">Informations client</div>
+          <div class="row2">
+            <div class="field"><label>Nom du client *</label><input type="text" id="nom_client" placeholder="Ex: M. Diallo Ibrahim"></div>
+            <div class="field"><label>Contact (tél. / email)</label><input type="text" id="contact_client" placeholder="+221 77 000 00 00"></div>
+          </div>
+          <div class="field"><label>Adresse du client</label><input type="text" id="adresse_client" placeholder="Adresse complète"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Informations projet</div>
+          <div class="row2">
+            <div class="field"><label>Nom du projet *</label><input type="text" id="nom_projet" placeholder="Ex: Villa Almadies"></div>
+            <div class="field"><label>Référence</label><input type="text" id="ref_projet" placeholder="PRJ-2025-001"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Ingénieur responsable</label><input type="text" id="ingenieur" placeholder="Nom & prénom"></div>
+            <div class="field"><label>Date</label><input type="date" id="date_projet"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Type d'installation</div>
+          <div class="tgrid">
+            <div class="tcard selected" onclick="selectType('residential',this)"><div class="tc-ico">&#127968;</div><div class="tc-name">Résidentiel</div><div class="tc-sub">Villa, maison</div></div>
+            <div class="tcard" onclick="selectType('commercial',this)"><div class="tc-ico">&#127970;</div><div class="tc-name">Commercial</div><div class="tc-sub">Boutique, bureau</div></div>
+            <div class="tcard" onclick="selectType('telecom',this)"><div class="tc-ico">&#128225;</div><div class="tc-name">Télécom</div><div class="tc-sub">BTS, antenne</div></div>
+            <div class="tcard" onclick="selectType('industrial',this)"><div class="tc-ico">&#127981;</div><div class="tc-name">Industriel</div><div class="tc-sub">Usine, pompage</div></div>
+            <div class="tcard" onclick="selectType('hospital',this)"><div class="tc-ico">&#127973;</div><div class="tc-name">Santé</div><div class="tc-sub">Clinique, hôpital</div></div>
+            <div class="tcard" onclick="selectType('school',this)"><div class="tc-ico">&#127979;</div><div class="tc-name">Scolaire</div><div class="tc-sub">École, université</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Source d'énergie d'appoint</div>
+          <p style="font-size:12px;color:#64748b;margin-bottom:1rem">
+            Lorsque la production solaire est insuffisante, quelle source prend le relais ?
+          </p>
+          <div class="appoint-grid">
+            <div class="appoint-card selected" id="ap-reseau" onclick="selectAppoint('reseau',this)">
+              <div class="ap-ico">&#9889;</div>
+              <div class="ap-name">Réseau électrique</div>
+              <div class="ap-sub">SENELEC ou réseau local</div>
+            </div>
+            <div class="appoint-card" id="ap-groupe" onclick="selectAppoint('groupe',this)">
+              <div class="ap-ico">&#9874;</div>
+              <div class="ap-name">Groupe électrogène</div>
+              <div class="ap-sub">Diesel ou essence</div>
+            </div>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn btn-primary" onclick="wNext()">Suivant &#8594;</button>
+        </div>
+      </div>
+
+      <!-- ÉTAPE 1 : SITE & MÉTÉO -->
+      <div class="wp" id="wp1">
+        <div class="card">
+          <div class="card-title">Localisation du site</div>
+          <p style="font-size:12px;color:#64748b;margin-bottom:1rem">
+            &#8505; Entrez le nom du site ou de la ville. La localisation GPS et les données météo seront importées automatiquement.
+          </p>
+          <div class="row2">
+            <div class="field">
+              <label>Nom du site / Ville *</label>
+              <input type="text" id="nom_site" placeholder="Ex: Almadies, Dakar, Sénégal"
+                     oninput="onSiteFieldChange()">
+            </div>
+            <div class="field">
+              <label>Pays</label>
+              <select id="pays" onchange="onSiteFieldChange()">
+                <option value="SN">Sénégal</option><option value="ML">Mali</option>
+                <option value="BF">Burkina Faso</option><option value="CI">Côte d'Ivoire</option>
+                <option value="MR">Mauritanie</option><option value="GN">Guinée</option>
+                <option value="NE">Niger</option><option value="TD">Tchad</option>
+                <option value="CM">Cameroun</option><option value="MG">Madagascar</option>
+                <option value="MA">Maroc</option><option value="TN">Tunisie</option>
+                <option value="DZ">Algérie</option><option value="FR">France</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Statut géocodage -->
+          <div id="geo-status" style="display:none;font-size:12px;padding:8px 12px;background:#FFFBEB;border:1px solid #FDE68A;border-radius:8px;margin-bottom:0.75rem"></div>
+
+          <!-- Coordonnées détectées -->
+          <div id="geo-coords" style="display:none">
+            <div class="info-box">
+              <div class="info-title">&#10003; Localisation détectée automatiquement</div>
+              <div id="geo-nom-complet" style="font-size:12px;color:#1E40AF;margin-bottom:6px"></div>
+              <div class="info-row"><span>Latitude</span><span id="lat_display">—</span></div>
+              <div class="info-row"><span>Longitude</span><span id="lon_display">—</span></div>
+            </div>
+          </div>
+          <input type="hidden" id="lat_hidden" value="0">
+          <input type="hidden" id="lon_hidden" value="0">
+        </div>
+
+        <!-- Données météo importées -->
+        <div id="meteo-result" style="display:none">
+          <div class="card">
+            <div class="card-title">&#9729; Données météo importées</div>
+            <div style="font-size:11px;color:#64748b;margin-bottom:0.75rem" id="meteo-source"></div>
+            <div class="metrics3">
+              <div class="metric"><div class="m-lbl">Irradiation GHI</div><div class="m-val c-sun" id="m-ghi">—</div><div class="m-unit">kWh/m²/j</div></div>
+              <div class="metric"><div class="m-lbl">PSH (heures soleil pic)</div><div class="m-val c-sun" id="m-hsp">—</div><div class="m-unit">h/j</div></div>
+              <div class="metric"><div class="m-lbl">Température ambiante</div><div class="m-val c-blue" id="m-temp">—</div><div class="m-unit">°C</div></div>
+            </div>
+            <div style="margin-top:0.5rem">
+              <div class="info-row" style="border:none"><span style="color:#94a3b8;font-size:11px">Irradiation plan incliné (POA)</span><span style="font-size:11px" id="m-poa">—</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paramètres solaires (modifiables) -->
+        <div class="card">
+          <div class="card-title">Paramètres solaires</div>
+          <div class="row2">
+            <div class="field"><label>PSH — Heures de soleil pic (h/j)</label><input type="number" id="hsp" value="5.5" step="0.1" oninput="updatePuissanceOnduleur()"></div>
+            <div class="field"><label>Irradiation GHI (kWh/m²/j)</label><input type="number" id="irr" value="5.8" step="0.1"></div>
+          </div>
+          <div class="row3">
+            <div class="field"><label>Température ambiante moy. (°C)</label><input type="number" id="temp_amb" value="30"></div>
+            <div class="field"><label>Température min. site (°C)</label><input type="number" id="temp_min" value="15"></div>
+            <div class="field"><label>Température max. cellule (°C)</label><input type="number" id="temp_max" value="70"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Rendement système η (%)</label>
+              <select id="eta_systeme">
+                <option value="55">55% — Pertes élevées</option>
+                <option value="65" selected>65% — Standard (recommandé)</option>
+                <option value="70">70% — Bon système</option>
+                <option value="75">75% — Très bon</option>
+                <option value="80">80% — Excellent</option>
+              </select>
+            </div>
+            <div class="field"><label>Performance ratio PR (%)</label><input type="number" id="pr" value="80" min="50" max="95"></div>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn" onclick="wPrev()">&#8592; Précédent</button>
+          <button class="btn btn-primary" onclick="wNext()">Suivant &#8594;</button>
+        </div>
+      </div>
+
+      <!-- ÉTAPE 2 : CHARGES -->
+      <div class="wp" id="wp2">
+        <div class="charge-tabs">
+          <div class="ctab active" onclick="switchChargeMode('charges',this)">Mode 1 — Tableau détaillé</div>
+          <div class="ctab" onclick="switchChargeMode('wh',this)">Mode 2 — Énergie (Wh/j)</div>
+        </div>
+
+        <div id="mode-charges">
+          <div class="card">
+            <div class="card-title">Tableau des charges électriques</div>
+            <div class="ch-head"><span>Appareil</span><span>Puiss.(W)</span><span>Qté</span><span>Durée(h/j)</span><span>Énergie(Wh)</span><span></span></div>
+            <div id="charges-list"></div>
+            <button class="btn btn-sm" onclick="addCharge()" style="margin-top:8px">+ Ajouter un appareil</button>
+          </div>
+          <div class="card">
+            <div class="card-title">Paramètres de calcul</div>
+            <div class="row2">
+              <div class="field"><label>Jours d'autonomie</label>
+                <select id="jours_auto">
+                  <option value="1">1 jour</option><option value="2" selected>2 jours</option>
+                  <option value="3">3 jours</option><option value="5">5 jours</option>
+                </select>
+              </div>
+              <div class="field"><label>Tarif réseau (FCFA/kWh)</label><input type="number" id="tarif_kwh" value="110"></div>
+            </div>
+            <div class="metrics3">
+              <div class="metric"><div class="m-lbl">Consommation brute</div><div class="m-val c-sun" id="t-conso">0</div><div class="m-unit">kWh/j</div></div>
+              <div class="metric"><div class="m-lbl">Puissance totale</div><div class="m-val c-blue" id="t-puiss">0</div><div class="m-unit">W</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="mode-wh" style="display:none">
+          <div class="card">
+            <div class="card-title">Saisie directe — Énergie journalière</div>
+            <div class="row2">
+              <div class="field"><label>Énergie totale (Wh/j)</label><input type="number" id="energie_wh" placeholder="Ex: 5000" min="1" oninput="updatePuissanceOnduleur()"></div>
+              <div class="field"><label>Jours d'autonomie</label>
+                <select id="jours_auto_wh"><option value="1">1 jour</option><option value="2" selected>2 jours</option><option value="3">3 jours</option><option value="5">5 jours</option></select>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="field"><label>Tarif réseau (FCFA/kWh)</label><input type="number" id="tarif_wh" value="110"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn" onclick="wPrev()">&#8592; Précédent</button>
+          <button class="btn btn-primary" onclick="wNextPrecalcul()">Suivant &#8594;</button>
+        </div>
+      </div>
+
+      <!-- ÉTAPE 3 : ÉQUIPEMENTS -->
+      <div class="wp" id="wp3">
+
+        <!-- RECOMMANDATIONS -->
+        <div class="card" style="background:linear-gradient(135deg,#FFFBEB,#FEF3C7);border-color:#FDE68A">
+          <div class="card-title">&#9881; Recommandations calculées — Choisissez vos équipements en conséquence</div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:0.75rem">
+            <div>
+              <div style="font-size:11px;font-weight:700;color:#92400E;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px">Puissance PV selon le scénario</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+                <div class="rec-mini"><span class="rec-badge sc-100">100%</span><span class="rec-val-sm" id="rec-ppv-100">—</span></div>
+                <div class="rec-mini"><span class="rec-badge sc-75">75%</span><span class="rec-val-sm" id="rec-ppv-75">—</span></div>
+                <div class="rec-mini"><span class="rec-badge sc-50">50%</span><span class="rec-val-sm" id="rec-ppv-50">—</span></div>
+                <div class="rec-mini"><span class="rec-badge sc-30">30%</span><span class="rec-val-sm" id="rec-ppv-30">—</span></div>
+              </div>
+            </div>
+            <div>
+              <div style="font-size:11px;font-weight:700;color:#92400E;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px">Équipements recommandés (base 100%)</div>
+              <div class="rec-line"><span>&#9889; Onduleur</span><strong id="rec-inv">—</strong></div>
+              <div class="rec-line"><span>&#128267; Batterie</span><strong id="rec-bat">—</strong></div>
+            </div>
+          </div>
+          <p style="font-size:11px;color:#92400E">
+            &#8505; Choisissez les équipements pour couvrir le scénario 100%. Les scénarios à 75%, 50% et 30% utiliseront une partie proportionnelle.
+          </p>
+        </div>
+
+        <!-- PANNEAUX -->
+        <div class="card">
+          <div class="card-title">Panneaux solaires</div>
+          <div class="row2">
+            <div class="field"><label>Modèle (catalogue)</label>
+              <select id="pan_sel" onchange="onPanSelect()"><option value="">Chargement...</option></select>
+            </div>
+            <div class="field"><label>Puissance unitaire (Wc)</label><input type="number" id="pan_power" value="550"></div>
+          </div>
+          <div class="row3">
+            <div class="field"><label>Voc (V)</label><input type="number" id="pan_voc" value="49.5" step="0.1"></div>
+            <div class="field"><label>Vmp (V)</label><input type="number" id="pan_vmp" value="41.2" step="0.1"></div>
+            <div class="field"><label>Icc (A)</label><input type="number" id="pan_icc" value="10.2" step="0.1"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Coeff. température γ (%/°C)</label><input type="number" id="pan_coeff" value="-0.35" step="0.01"></div>
+            <div class="field"><label>Technologie</label><input type="text" id="pan_tech" readonly value="—"></div>
+          </div>
+        </div>
+
+        <!-- ONDULEUR -->
+        <div class="card">
+          <div class="card-title">Onduleur / Chargeur</div>
+          <div class="info-box" style="margin-bottom:0.75rem">
+            <div class="info-title">Puissance recommandée : <span id="inv-rec-label" style="font-size:13px;font-weight:700;color:#1E40AF">—</span></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Modèle (catalogue)</label>
+              <select id="inv_sel" onchange="onInvSelect()"><option value="">Chargement...</option></select>
+            </div>
+            <div class="field"><label>Puissance (kVA)</label><input type="number" id="inv_power" value="5"></div>
+          </div>
+          <div class="row3">
+            <div class="field"><label>Rendement (%)</label><input type="number" id="inv_eff" value="96" step="0.5"></div>
+            <div class="field"><label>Vmppt min (V)</label><input type="number" id="inv_vmin" value="120"></div>
+            <div class="field"><label>Vmppt max (V)</label><input type="number" id="inv_vmax" value="450"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Vmax onduleur (V)</label><input type="number" id="inv_vmax_abs" value="500"></div>
+            <div class="field"><label>Coefficient de sécurité onduleur</label>
+              <select id="coeff_inv" onchange="onCoeffInvChange()">
+                <option value="1.2">1.2</option>
+                <option value="1.3" selected>1.3</option>
+                <option value="1.4">1.4</option>
+                <option value="1.5">1.5</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="info-box" style="margin-top:0.5rem">
+            <div class="info-title">Aperçu — Puissance onduleur recommandée (charges seules)</div>
+            <div class="info-row"><span>Puissance nominale charges</span><span id="inv-p-nominale">—</span></div>
+            <div class="info-row"><span>Puissance calculée (× coeff.)</span><span id="inv-p-calculee">—</span></div>
+            <div class="info-row"><span>Recommandation</span><span id="inv-p-recommande">—</span></div>
+            <div class="info-row"><span>Modèle auto-sélectionné</span><span id="inv-modele-auto">—</span></div>
+          </div>
+        </div>
+
+        <!-- BATTERIES -->
+        <div class="card">
+          <div class="card-title">Batteries</div>
+          <div class="info-box" style="margin-bottom:0.75rem">
+            <div class="info-title">Capacité recommandée (base 100%) : <span id="bat-rec-label" style="font-size:13px;font-weight:700;color:#1E40AF">—</span></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Technologie</label>
+              <select id="bat_type" onchange="onBatType()">
+                <option value="LiFePO4">LiFePO4 — Lithium Fer Phosphate</option>
+                <option value="AGM">AGM — Plomb étanche</option>
+                <option value="GEL">GEL — Plomb gélifié</option>
+                <option value="OPzV">OPzV — Plomb tubulaire</option>
+              </select>
+            </div>
+            <div class="field"><label>Modèle</label>
+              <select id="bat_sel" onchange="onBatSel()"></select>
+            </div>
+          </div>
+          <div class="row3">
+            <div class="field"><label>Capacité unitaire (kWh)</label><input type="number" id="bat_kwh" value="5" step="0.5"></div>
+            <div class="field"><label>Tension système (V)</label><input type="number" id="bat_v" value="48"></div>
+            <div class="field"><label>DOD (%)</label><input type="number" id="bat_dod" value="80"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Rendement batterie (%)</label><input type="number" id="bat_eta" value="90"></div>
+            <div class="field"><label>Tension AC réseau (V)</label><input type="number" id="tension_ac" value="230"></div>
+          </div>
+        </div>
+
+        <!-- GROUPE ÉLECTROGÈNE -->
+        <div class="card" id="card-gen" style="display:none">
+          <div class="card-title">Groupe électrogène de secours</div>
+          <div class="row2">
+            <div class="field"><label>Modèle</label>
+              <select id="gen_modele">
+                <option>Cummins C22D5 — 22 kVA Diesel</option>
+                <option>Cummins C33D5 — 33 kVA Diesel</option>
+                <option>Himoinsa HFW-20 — 20 kVA</option>
+                <option>FG Wilson P22-6 — 22 kVA</option>
+              </select>
+            </div>
+            <div class="field"><label>Carburant</label>
+              <select id="gen_fuel"><option value="Diesel">Diesel</option><option value="Essence">Essence</option></select>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Facteur de simultanéité (%)</label><input type="number" id="fac_simult" value="80"></div>
+            <div class="field"><label>Rendement groupe (%)</label><input type="number" id="eta_ge" value="85"></div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn" onclick="wPrev()">&#8592; Précédent</button>
+          <button class="btn btn-primary" id="btn-dimensionner" onclick="lancerDimensionnement()">
+            &#128202; Calculer le dimensionnement &#8594;
+          </button>
+        </div>
+      </div>
+
+      <!-- ÉTAPE 4 : TABLEAU DE BORD TECHNIQUE -->
+      <div class="wp" id="wp4">
+        <div class="ph" style="margin-bottom:1rem">
+          <div>
+            <div class="ph-title">Dimensionnement technique</div>
+          </div>
+        </div>
+
+        <div id="dash-validation"></div>
+
+        <div class="card">
+          <div class="card-title">Production solaire vs consommation</div>
+          <canvas id="chart-prod-conso" height="90"></canvas>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Puissance PV installée par scénario (kWc)</div>
+          <canvas id="chart-kwc" height="90"></canvas>
+        </div>
+
+        <div id="dash-table-container"></div>
+
+        <div class="actions">
+          <button class="btn" onclick="wPrev()">&#8592; Précédent</button>
+          <button class="btn btn-primary" id="btn-valider-dim" onclick="validerDimensionnement()">
+            &#10003; Valider et continuer vers les prix &#8594;
+          </button>
+        </div>
+      </div>
+
+      <!-- ÉTAPE 5 : PRIX -->
+      <div class="wp" id="wp5">
+
+        <div class="card">
+          <div class="card-title">Scénario 100% — Tous les postes</div>
+          <div class="row3">
+            <div class="field"><label>Panneau (FCFA/unité)</label><input type="number" id="prix_panneau_100" placeholder="Ex: 25 000" min="0"></div>
+            <div class="field"><label>Onduleur (FCFA/unité)</label><input type="number" id="prix_onduleur_100" placeholder="Ex: 150 000" min="0"></div>
+            <div class="field"><label>Batterie (FCFA/module)</label><input type="number" id="prix_batterie_100" placeholder="Ex: 500 000" min="0"></div>
+          </div>
+          <div class="row3">
+            <div class="field"><label>Groupe électrogène (FCFA)</label><input type="number" id="prix_groupe_100" placeholder="Ex: 2 500 000" min="0"></div>
+            <div class="field"><label>Câblage & protections (FCFA)</label><input type="number" id="prix_cables_100" placeholder="Ex: 200 000" min="0"></div>
+            <div class="field"><label>Structure & montage (FCFA)</label><input type="number" id="prix_structure_100" placeholder="Ex: 150 000" min="0"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Installation & main d'œuvre (FCFA)</label><input type="number" id="prix_installation_100" placeholder="Ex: 300 000" min="0"></div>
+            <div class="field"><label>Divers & imprévus (FCFA)</label><input type="number" id="prix_divers_100" placeholder="Ex: 100 000" min="0"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Scénario 75% — Tous les postes</div>
+          <div class="row3">
+            <div class="field"><label>Panneau (FCFA/unité)</label><input type="number" id="prix_panneau_75" placeholder="Ex: 25 000" min="0"></div>
+            <div class="field"><label>Onduleur (FCFA/unité)</label><input type="number" id="prix_onduleur_75" placeholder="Ex: 130 000" min="0"></div>
+            <div class="field"><label>Batterie (FCFA/module)</label><input type="number" id="prix_batterie_75" placeholder="Ex: 500 000" min="0"></div>
+          </div>
+          <div class="row3">
+            <div class="field"><label>Groupe électrogène (FCFA)</label><input type="number" id="prix_groupe_75" placeholder="Ex: 2 500 000" min="0"></div>
+            <div class="field"><label>Câblage & protections (FCFA)</label><input type="number" id="prix_cables_75" placeholder="Ex: 170 000" min="0"></div>
+            <div class="field"><label>Structure & montage (FCFA)</label><input type="number" id="prix_structure_75" placeholder="Ex: 130 000" min="0"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Installation & main d'œuvre (FCFA)</label><input type="number" id="prix_installation_75" placeholder="Ex: 260 000" min="0"></div>
+            <div class="field"><label>Divers & imprévus (FCFA)</label><input type="number" id="prix_divers_75" placeholder="Ex: 85 000" min="0"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Scénario 50% — Tous les postes</div>
+          <div class="row3">
+            <div class="field"><label>Panneau (FCFA/unité)</label><input type="number" id="prix_panneau_50" placeholder="Ex: 25 000" min="0"></div>
+            <div class="field"><label>Onduleur (FCFA/unité)</label><input type="number" id="prix_onduleur_50" placeholder="Ex: 110 000" min="0"></div>
+            <div class="field"><label>Batterie (FCFA/module)</label><input type="number" id="prix_batterie_50" placeholder="Ex: 500 000" min="0"></div>
+          </div>
+          <div class="row3">
+            <div class="field"><label>Groupe électrogène (FCFA)</label><input type="number" id="prix_groupe_50" placeholder="Ex: 2 500 000" min="0"></div>
+            <div class="field"><label>Câblage & protections (FCFA)</label><input type="number" id="prix_cables_50" placeholder="Ex: 130 000" min="0"></div>
+            <div class="field"><label>Structure & montage (FCFA)</label><input type="number" id="prix_structure_50" placeholder="Ex: 100 000" min="0"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Installation & main d'œuvre (FCFA)</label><input type="number" id="prix_installation_50" placeholder="Ex: 200 000" min="0"></div>
+            <div class="field"><label>Divers & imprévus (FCFA)</label><input type="number" id="prix_divers_50" placeholder="Ex: 65 000" min="0"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Scénario 30% — Tous les postes</div>
+          <div class="row3">
+            <div class="field"><label>Panneau (FCFA/unité)</label><input type="number" id="prix_panneau_30" placeholder="Ex: 25 000" min="0"></div>
+            <div class="field"><label>Onduleur (FCFA/unité)</label><input type="number" id="prix_onduleur_30" placeholder="Ex: 85 000" min="0"></div>
+            <div class="field"><label>Batterie (FCFA/module)</label><input type="number" id="prix_batterie_30" placeholder="Ex: 500 000" min="0"></div>
+          </div>
+          <div class="row3">
+            <div class="field"><label>Groupe électrogène (FCFA)</label><input type="number" id="prix_groupe_30" placeholder="Ex: 2 500 000" min="0"></div>
+            <div class="field"><label>Câblage & protections (FCFA)</label><input type="number" id="prix_cables_30" placeholder="Ex: 90 000" min="0"></div>
+            <div class="field"><label>Structure & montage (FCFA)</label><input type="number" id="prix_structure_30" placeholder="Ex: 70 000" min="0"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Installation & main d'œuvre (FCFA)</label><input type="number" id="prix_installation_30" placeholder="Ex: 140 000" min="0"></div>
+            <div class="field"><label>Divers & imprévus (FCFA)</label><input type="number" id="prix_divers_30" placeholder="Ex: 45 000" min="0"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Paramètres financiers communs</div>
+          <div class="row2">
+            <div class="field"><label>Remise commerciale (%)</label><input type="number" id="remise_pct" value="0" min="0" max="50"></div>
+            <div class="field"><label>Taux d'actualisation VAN (%)</label><input type="number" id="taux_act" value="5" min="1" max="20"></div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn" onclick="wPrev()">&#8592; Précédent</button>
+          <button class="btn btn-primary" id="btn-calc" onclick="lancerCalcul()">
+            &#9881; Générer les 4 scénarios
+          </button>
+        </div>
+      </div>
+
+      <!-- ÉTAPE 6 : SCÉNARIOS -->
+      <div class="wp" id="wp6">
+        <div class="ph" style="margin-bottom:1rem">
+          <div>
+            <div class="ph-title">Comparaison des 4 scénarios</div>
+            <div class="ph-sub">Sélectionnez le scénario adapté à votre budget et vos besoins</div>
+          </div>
+        </div>
+        <div id="scenarios-container"></div>
+        <div class="actions"><button class="btn" onclick="wPrev()">&#8592; Modifier</button></div>
+      </div>
+
+      <!-- ÉTAPE 7 : RAPPORT -->
+      <div class="wp" id="wp7">
+        <div class="rapport-tabs">
+          <button class="btn rapport-tab active" id="tab-technique"
+                  onclick="switchRapportTab('technique')">📐 Rapport technique</button>
+          <button class="btn rapport-tab" id="tab-financier"
+                  onclick="switchRapportTab('financier')">💰 Rapport financier</button>
+        </div>
+        <div id="rapport-content" class="rapport-pane active"></div>
+        <div id="rapport-financier-content" class="rapport-pane"></div>
+        <div class="actions" style="margin-top:1rem">
+          <button class="btn" onclick="goStep(6)">&#8592; Changer de scénario</button>
+          <button class="btn btn-green" onclick="window.print()">&#128438; Imprimer / PDF</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/wizard.js"></script>
+<script src="../js/calcul.js"></script>
+<script src="../js/rapport.js"></script>
+<script>window.onload = function() { initApp(); };</script>
+</body>
+</html>

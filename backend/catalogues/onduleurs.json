@@ -1,0 +1,27 @@
+[
+  {"id":"vic3k","marque":"Victron","modele":"EasySolar-II 48/3000/35 MPPT 250/70 GX","puissance_kva":3,"rendement":94,"vmppt_min":120,"vmppt_max":250,"vmax":250,"imax_dc":70,"nb_mppt":1,"type":"hybride","prix_fcfa":85000},
+  {"id":"vic5k","marque":"Victron","modele":"EasySolar-II 48/5000/70 MPPT 250/100 GX","puissance_kva":5,"rendement":96,"vmppt_min":120,"vmppt_max":250,"vmax":250,"imax_dc":100,"nb_mppt":1,"type":"hybride","prix_fcfa":125000},
+
+  {"id":"gro3k","marque":"Growatt","modele":"SPF 3000 ES","puissance_kva":3,"rendement":93,"vmppt_min":120,"vmppt_max":250,"vmax":250,"imax_dc":80,"nb_mppt":1,"type":"hybride","prix_fcfa":55000},
+  {"id":"gro5k","marque":"Growatt","modele":"SPF 5000 ES","puissance_kva":5,"rendement":93,"vmppt_min":120,"vmppt_max":430,"vmax":450,"imax_dc":100,"nb_mppt":1,"type":"hybride","prix_fcfa":65000},
+  {"id":"gro10k","marque":"Growatt","modele":"SPH 10000TL3 BH-UP","puissance_kva":10,"rendement":97,"vmppt_min":120,"vmppt_max":1000,"vmax":1000,"imax_dc":27,"nb_mppt":2,"type":"hybride","prix_fcfa":185000},
+  {"id":"gro15k","marque":"Growatt","modele":"WIT 15K-HU","puissance_kva":15,"rendement":97.6,"vmppt_min":150,"vmppt_max":850,"vmax":1000,"imax_dc":80,"nb_mppt":2,"type":"hybride","prix_fcfa":320000},
+
+  {"id":"dey5k","marque":"Deye","modele":"SUN-5K-SG01LP1","puissance_kva":5,"rendement":97,"vmppt_min":125,"vmppt_max":425,"vmax":500,"imax_dc":26,"nb_mppt":2,"type":"hybride","prix_fcfa":75000},
+  {"id":"dey6k","marque":"Deye","modele":"SUN-6K-SG01LP1","puissance_kva":6,"rendement":97,"vmppt_min":125,"vmppt_max":425,"vmax":500,"imax_dc":34,"nb_mppt":2,"type":"hybride","prix_fcfa":90000},
+  {"id":"dey12k","marque":"Deye","modele":"SUN-12K-SG04LP3","puissance_kva":12,"rendement":97,"vmppt_min":200,"vmppt_max":650,"vmax":800,"imax_dc":39,"nb_mppt":2,"type":"hybride","prix_fcfa":250000},
+  {"id":"dey12_2k","marque":"Deye","modele":"SUN-12K-SG01LP1-EU","puissance_kva":12,"rendement":97.6,"vmppt_min":125,"vmppt_max":425,"vmax":500,"imax_dc":78,"nb_mppt":3,"type":"hybride","prix_fcfa":260000},
+  {"id":"dey14k","marque":"Deye","modele":"SUN-14K-SG01LP1-EU","puissance_kva":14,"rendement":97.6,"vmppt_min":125,"vmppt_max":425,"vmax":500,"imax_dc":78,"nb_mppt":3,"type":"hybride","prix_fcfa":290000},
+  {"id":"dey16k","marque":"Deye","modele":"SUN-16K-SG01LP1-EU","puissance_kva":16,"rendement":97.6,"vmppt_min":125,"vmppt_max":425,"vmax":500,"imax_dc":78,"nb_mppt":3,"type":"hybride","prix_fcfa":320000},
+
+  {"id":"fel3k","marque":"Felicity Solar","modele":"IVEM3024","puissance_kva":3,"rendement":93,"vmppt_min":120,"vmppt_max":450,"vmax":500,"imax_dc":100,"nb_mppt":1,"type":"hybride","prix_fcfa":68000},
+  {"id":"fel5k","marque":"Felicity Solar","modele":"IVEM5048","puissance_kva":5,"rendement":93,"vmppt_min":120,"vmppt_max":450,"vmax":500,"imax_dc":100,"nb_mppt":1,"type":"hybride","prix_fcfa":98000},
+  {"id":"fel8k","marque":"Felicity Solar","modele":"IVEM8048-II","puissance_kva":8,"rendement":94,"vmppt_min":120,"vmppt_max":450,"vmax":500,"imax_dc":150,"nb_mppt":1,"type":"hybride","prix_fcfa":165000},
+  {"id":"fel12k","marque":"Felicity Solar","modele":"IVEM12048-II","puissance_kva":12,"rendement":94,"vmppt_min":120,"vmppt_max":450,"vmax":500,"imax_dc":240,"nb_mppt":1,"type":"hybride","prix_fcfa":245000},
+
+  {"id":"must3k","marque":"Must","modele":"PV1800 PRO 3kVA","puissance_kva":3,"rendement":90,"vmppt_min":150,"vmppt_max":430,"vmax":450,"imax_dc":80,"nb_mppt":1,"type":"hybride","prix_fcfa":58000},
+  {"id":"must3_5k","marque":"Must","modele":"PV1800 PREM 3.5kVA","puissance_kva":3.5,"rendement":91,"vmppt_min":150,"vmppt_max":400,"vmax":400,"imax_dc":60,"nb_mppt":1,"type":"hybride","prix_fcfa":65000},
+  {"id":"must5_2k","marque":"Must","modele":"PV1800 PRO 5.2kVA","puissance_kva":5.2,"rendement":98,"vmppt_min":150,"vmppt_max":430,"vmax":450,"imax_dc":60,"nb_mppt":1,"type":"hybride","prix_fcfa":92000},
+  {"id":"must5_5k","marque":"Must","modele":"PV1800 PREM 5.5kVA","puissance_kva":5.5,"rendement":92,"vmppt_min":150,"vmppt_max":400,"vmax":450,"imax_dc":60,"nb_mppt":1,"type":"hybride","prix_fcfa":98000},
+  {"id":"must6_2k","marque":"Must","modele":"PV1800 PREM 6.2kVA","puissance_kva":6.2,"rendement":92,"vmppt_min":150,"vmppt_max":400,"vmax":450,"imax_dc":120,"nb_mppt":2,"type":"hybride","prix_fcfa":110000}
+]

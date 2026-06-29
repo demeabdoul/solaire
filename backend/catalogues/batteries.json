@@ -1,0 +1,29 @@
+{
+  "LiFePO4": [
+    {"id":"pylon_us3000","marque":"Pylontech","modele":"US3000C","capacite_kwh":3.55,"capacite_ah":74,"tension_v":48,"dod":0.90,"rendement":0.95,"cycles":6000,"prix_fcfa":320000},
+    {"id":"pylon_us5000","marque":"Pylontech","modele":"US5000","capacite_kwh":4.8,"capacite_ah":100,"tension_v":48,"dod":0.90,"rendement":0.95,"cycles":6000,"prix_fcfa":420000},
+    {"id":"huawei_luna5","marque":"Huawei","modele":"LUNA2000-5","capacite_kwh":5.0,"capacite_ah":104,"tension_v":48,"dod":0.90,"rendement":0.95,"cycles":6000,"prix_fcfa":480000},
+    {"id":"victron_lfp","marque":"Victron","modele":"LFP Smart 200Ah","capacite_kwh":9.6,"capacite_ah":200,"tension_v":48,"dod":0.90,"rendement":0.95,"cycles":4000,"prix_fcfa":750000},
+    {"id":"byd_hvm","marque":"BYD","modele":"Battery Box HVM","capacite_kwh":11.1,"capacite_ah":231,"tension_v":48,"dod":0.90,"rendement":0.95,"cycles":6000,"prix_fcfa":850000},
+    {"id":"fel_lpbf5","marque":"Felicity Solar","modele":"LPBF 100Ah","capacite_kwh":5.0,"capacite_ah":100,"tension_v":48,"dod":0.90,"rendement":0.95,"cycles":6000,"prix_fcfa":380000},
+    {"id":"fel_lpbf10","marque":"Felicity Solar","modele":"LPBF 200Ah","capacite_kwh":10.0,"capacite_ah":200,"tension_v":48,"dod":0.90,"rendement":0.95,"cycles":6000,"prix_fcfa":680000},
+    {"id":"fel_lpba15","marque":"Felicity Solar","modele":"LPBA 300Ah","capacite_kwh":15.34,"capacite_ah":300,"tension_v":51.2,"dod":0.90,"rendement":0.95,"cycles":6000,"prix_fcfa":980000},
+    {"id":"fel_flb16","marque":"Felicity Solar","modele":"FLB 48314TG1-H","capacite_kwh":16.0,"capacite_ah":314,"tension_v":48,"dod":0.90,"rendement":0.95,"cycles":6000,"prix_fcfa":1050000},
+    {"id":"must_lp2000_5","marque":"Must","modele":"LP2000 51.2V-100Ah","capacite_kwh":5.12,"capacite_ah":100,"tension_v":51.2,"dod":0.90,"rendement":0.95,"cycles":6000,"prix_fcfa":390000},
+    {"id":"must_lp2000_10","marque":"Must","modele":"LP2000 51.2V-200Ah","capacite_kwh":10.24,"capacite_ah":200,"tension_v":51.2,"dod":0.90,"rendement":0.95,"cycles":6000,"prix_fcfa":700000},
+    {"id":"must_lp2000_14","marque":"Must","modele":"LP2000 51.2V-280Ah","capacite_kwh":14.3,"capacite_ah":280,"tension_v":51.2,"dod":0.90,"rendement":0.95,"cycles":6000,"prix_fcfa":920000}
+  ],
+  "AGM": [
+    {"id":"exide_200","marque":"Exide","modele":"12V 200Ah","capacite_kwh":2.4,"capacite_ah":200,"tension_v":12,"dod":0.50,"rendement":0.85,"cycles":800,"prix_fcfa":55000},
+    {"id":"rolls_600","marque":"Rolls","modele":"S-600EX 6V","capacite_kwh":3.6,"capacite_ah":600,"tension_v":6,"dod":0.50,"rendement":0.85,"cycles":1200,"prix_fcfa":85000},
+    {"id":"sonnenschein_agm","marque":"Sonnenschein","modele":"A600 6V 350Ah","capacite_kwh":2.1,"capacite_ah":350,"tension_v":6,"dod":0.50,"rendement":0.85,"cycles":1200,"prix_fcfa":72000}
+  ],
+  "GEL": [
+    {"id":"victron_gel","marque":"Victron","modele":"GEL 200Ah/12V","capacite_kwh":2.4,"capacite_ah":200,"tension_v":12,"dod":0.70,"rendement":0.87,"cycles":1500,"prix_fcfa":68000},
+    {"id":"varta_gel","marque":"Varta","modele":"GEL 150Ah/12V","capacite_kwh":1.8,"capacite_ah":150,"tension_v":12,"dod":0.70,"rendement":0.87,"cycles":1200,"prix_fcfa":52000}
+  ],
+  "OPzV": [
+    {"id":"hoppecke_opzv","marque":"Hoppecke","modele":"12 OPzV 1500","capacite_kwh":7.2,"capacite_ah":1500,"tension_v":2,"dod":0.80,"rendement":0.88,"cycles":2500,"prix_fcfa":210000},
+    {"id":"sonnen_a700","marque":"Sonnenschein","modele":"A700 Solar 2V","capacite_kwh":1.6,"capacite_ah":800,"tension_v":2,"dod":0.80,"rendement":0.88,"cycles":2000,"prix_fcfa":95000}
+  ]
+}

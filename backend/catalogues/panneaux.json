@@ -1,0 +1,15 @@
+[
+  {"id":"ja400","marque":"JA Solar","modele":"JAM54S30-400","puissance_wc":400,"voc":49.5,"vmp":41.2,"icc":10.2,"imp":9.7,"rendement":20.0,"coeff_temp":-0.35,"technologie":"Monocristallin PERC","garantie_ans":25},
+  {"id":"ja450","marque":"JA Solar","modele":"JAM72S30-450","puissance_wc":450,"voc":52.3,"vmp":43.8,"icc":10.9,"imp":10.3,"rendement":20.4,"coeff_temp":-0.35,"technologie":"Monocristallin PERC","garantie_ans":25},
+  {"id":"ja550","marque":"JA Solar","modele":"JAM72S30-550","puissance_wc":550,"voc":55.1,"vmp":46.2,"icc":11.9,"imp":11.2,"rendement":21.3,"coeff_temp":-0.35,"technologie":"Monocristallin PERC","garantie_ans":25},
+  {"id":"jinko450","marque":"Jinko Solar","modele":"JKM450M-7RL3","puissance_wc":450,"voc":53.6,"vmp":45.3,"icc":10.5,"imp":9.9,"rendement":20.8,"coeff_temp":-0.35,"technologie":"Monocristallin Tiger Pro","garantie_ans":25},
+  {"id":"jinko580","marque":"Jinko Solar","modele":"JKM580N-72HL4","puissance_wc":580,"voc":57.8,"vmp":49.2,"icc":12.1,"imp":11.8,"rendement":22.0,"coeff_temp":-0.35,"technologie":"Monocristallin Tiger Neo","garantie_ans":25},
+  {"id":"longi550","marque":"LONGi Solar","modele":"LR5-72HTH-550","puissance_wc":550,"voc":55.2,"vmp":46.5,"icc":11.9,"imp":11.3,"rendement":21.3,"coeff_temp":-0.34,"technologie":"Monocristallin Hi-MO6","garantie_ans":25},
+  {"id":"longi610","marque":"LONGi Solar","modele":"LR5-72HTH-610","puissance_wc":610,"voc":57.4,"vmp":48.8,"icc":12.7,"imp":12.5,"rendement":22.6,"coeff_temp":-0.34,"technologie":"Monocristallin Hi-MO7","garantie_ans":30},
+  {"id":"cs400","marque":"Canadian Solar","modele":"CS3W-400P","puissance_wc":400,"voc":48.6,"vmp":40.3,"icc":10.3,"imp":9.93,"rendement":19.4,"coeff_temp":-0.37,"technologie":"Polycristallin","garantie_ans":25},
+  {"id":"cs600","marque":"Canadian Solar","modele":"CS7N-600MS","puissance_wc":600,"voc":56.8,"vmp":48.1,"icc":12.7,"imp":12.1,"rendement":21.8,"coeff_temp":-0.34,"technologie":"Monocristallin TOPCon","garantie_ans":25},
+  {"id":"trina400","marque":"Trina Solar","modele":"TSM-400DE15M","puissance_wc":400,"voc":49.8,"vmp":41.8,"icc":10.2,"imp":9.57,"rendement":20.1,"coeff_temp":-0.35,"technologie":"Monocristallin Vertex","garantie_ans":25},
+  {"id":"trina670","marque":"Trina Solar","modele":"TSM-670NEG21C","puissance_wc":670,"voc":58.4,"vmp":49.6,"icc":13.6,"imp":12.9,"rendement":22.1,"coeff_temp":-0.33,"technologie":"TOPCon Vertex","garantie_ans":25},
+  {"id":"risen400","marque":"Risen Energy","modele":"RSM40-8-400M","puissance_wc":400,"voc":49.8,"vmp":41.8,"icc":10.1,"imp":9.57,"rendement":20.1,"coeff_temp":-0.35,"technologie":"Monocristallin PERC","garantie_ans":25},
+  {"id":"risen500","marque":"Risen Energy","modele":"RSM110-8-500M","puissance_wc":500,"voc":53.5,"vmp":45.0,"icc":11.1,"imp":10.5,"rendement":20.8,"coeff_temp":-0.35,"technologie":"Monocristallin PERC","garantie_ans":25}
+]

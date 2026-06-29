@@ -1,0 +1,25 @@
+{
+  "name": "SolarDim Pro",
+  "short_name": "SolarDim",
+  "description": "Outil de dimensionnement de systèmes solaires PV hybrides",
+  "start_url": "./pages/app.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f0f4f8",
+  "theme_color": "#F59E0B",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

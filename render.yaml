@@ -1,0 +1,32 @@
+services:
+  # ── Backend Flask (API) ──────────────────────────────────────
+  - type: web
+    name: solardim-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn main:app
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./solardim.db
+      - key: PYTHON_VERSION
+        value: "3.11"
+    # ⚠️ Disque persistant requis pour que solardim.db survive aux
+    # redéploiements (sinon Render repart d'un fichier vide à chaque
+    # déploiement — voir le message [DB] dans les logs au démarrage).
+    disk:
+      name: solardim-data
+      mountPath: /opt/render/project/src/backend
+      sizeGB: 1
+
+  # ── Frontend statique (HTML/CSS/JS) ──────────────────────────
+  - type: web
+    name: solardim-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: ""
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /
+        destination: /pages/app.html
