@@ -1,3 +1,5 @@
+
+
 services:
   # ── Backend Flask (API) ──────────────────────────────────────
   - type: web
@@ -11,13 +13,12 @@ services:
         value: sqlite:///./solardim.db
       - key: PYTHON_VERSION
         value: "3.11"
-    # ⚠️ Disque persistant requis pour que solardim.db survive aux
-    # redéploiements (sinon Render repart d'un fichier vide à chaque
-    # déploiement — voir le message [DB] dans les logs au démarrage).
-    disk:
-      name: solardim-data
-      mountPath: /opt/render/project/src/backend
-      sizeGB: 1
+    # ⚠️ Pas de disque persistant (plan gratuit Render = pas de carte
+    # bancaire requise). Conséquence : solardim.db repart VIDE à
+    # chaque redéploiement du backend (voir message [DB] dans les
+    # logs au démarrage). Si tu veux que les projets sauvegardés
+    # survivent dans le temps, il faudra activer un disque payant
+    # plus tard (Dashboard → service backend → Disks → Add Disk).
 
   # ── Frontend statique (HTML/CSS/JS) ──────────────────────────
   - type: web
